@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    //    var raiz = Math.sqrt(arg);
+        function raizquadrada(numero){
+            raiz = Math.sqrt(numero);
+            alert ('a raíz de '+numero+ ', é igual a' +raiz )
+        }
+        function escreveDiv(texto){
+            document.getElementById("minhaDiv").innerHTML = texto;
+        }
+        
+        function escreveDiv2(){
+            texto = prompt('Digite um texto qualquer');
+            document.getElementById("minhaDiv2").innerHTML = texto;
+        }
+    </script>
+</head>
+<body>
+    <h1>Raiz Quadrada</h1>
+    <button onclick="raizquadrada(25)">raiz de 25</button><br><br>
+    <button onclick="raizquadrada(36)">raiz de 36</button><br><br>
+    <button onclick="raizquadrada(49)">raiz de 49</button><br><br>
+    <h1>Escrevendo na Div</h1>
+    <button onclick="escreveDiv('<h1> Progamação Web</h1')">Escrever</button><br><br>
+    <div id="minhaDiv"></div>
+    <hr>
+    <h1>Escrevendo na Texto Dinâmico</h1>
+    <button onclick="escreveDiv2()">Escrever</button><br><br>
+    <div id="minhaDiv2"></div>
+</body>
+</html>
