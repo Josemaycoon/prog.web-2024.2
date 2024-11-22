@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+    <script>
+          let linguagens = Array();
+
+          linguagens[0] = 'Dart';
+          linguagens[1] = 'PHP';
+          linguagens[2] = 'Java';
+          linguagens[3] = 'Pyton';
+          linguagens[4] = 'Perl';
+          linguagens[5] = 'Ruby on Rails';
+          linguagens[6] = 'C ++';
+
+        function mostrarListaLinguagens(){
+            const container = document.getElementById('minhaDiv');
+            for (var i = 0; i <linguagens.length; i++) {
+                var tag = '<h5>' + i + ' - ' + linguagens[i] + '</h5>';
+                container.innerHTML += tag;
+            }
+    }
+
+    function posicaoLinguagens(){
+        var indice = prompt('Qual posição da lista deseja consultar?');
+        alert(linguagens[indice]);
+    }
+          let frutas = Array();
+          frutas[0] = 'uva';
+          frutas[1] = 'manga';
+          frutas[2] = 'melancia';
+          frutas[3] = 'laranja';
+          frutas[4] = 'goiaba';
+          frutas[5] = 'melão';
+          frutas[6] = 'morango';
+
+        function mostrarListaFRutas(){
+            const container = document.getElementById('minhaDiv1');
+            for (var i = 0; i <frutas.length; i++) {
+                var tag = '<h5>' + i + ' - ' + frutas[i] + '</h5>';
+                container.innerHTML += tag;
+            }
+    }
+
+    function posicaoFrutas(){
+        var indice = prompt('Qual posição da lista deseja consultar?');
+        alert(frutas[indice]);
+    }    
+
+    </script>
+</head>
+<body>
+    <h1>Array de Linguagens</h1>
+    <button onclick="mostrarListaLinguagens()">criar Array</button> <br> <br>
+
+    <button onclick="posicaoLinguagens()">posiçaõ no Array</button>
+
+    <div id="minhaDiv"></div>
+    <hr> 
+    <h1>Array de frutas</h1>
+    <button onclick="mostrarListaFRutas()">criar Array</button> <br> <br>
+
+    <button onclick="posicaoFrutas()">posiçaõ no Array</button>
+    <div id="minhaDiv1"></div>
+
+</body>
+</html>
