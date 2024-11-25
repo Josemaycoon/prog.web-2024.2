@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function escreverNumeros(){
+            const n = parseInt(prompt("digite o valor de N"))
+
+            if (isNaN(n)  ||  n <= 0) {
+                alert("Por favor, insira um número válido maior que zero");
+                return;
+            } ;
+                
+            const div = document.getElementById("numeros");
+            div.innerHTML = "";
+            for (let i = 1; i <= n; i++) {
+            div.innerHTML += i + "<br>";
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h1>escrevendo de 1 a N</h1>
+    <button onclick="escreverNumeros()">números</button>
+    <div id="numeros"></div>
+</body>
+</html>
