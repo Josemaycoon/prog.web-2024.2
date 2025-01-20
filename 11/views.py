@@ -1,15 +1,15 @@
-from django.shortcuts import HttpResponse, render
-
-# create your views here.
+# Create tour views here.
+from django.shortcuts import render, HttpResponse
 
 def index(request):
-    return HttpResponse('A view index funcionou , wow!')
+    return render(request,'index.html')
 
 def sobre(request):
-    return HttpResponse('<h1>Sistema 1.0 desenvolvido por mim<h1>')
+    return render(request,'sobre.html')
 
 def contato(request):
-    return HttpResponse('Esta é a pagina de contato.')
+    return render(request,'contato.html')
 
 def ajuda(request):
-    return HttpResponse('Esta é a pagina de ajuda')    
+    return render(request,'ajuda.html')
+
