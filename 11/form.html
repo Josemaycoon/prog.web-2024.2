@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+
+{% block titulo %} Formulário {% endblock  %}
+
+
+{% block conteudo %}  
+
+
+<form method="post">
+    {% csrf_token %}
+    <h1>dados pessoais</h1>
+   <p> 
+    <label for="nome">Nome completo:</label>
+    <input type="text" id="nome" class="form-control"  name="nome" required>
+   </p>
+
+
+   <p>
+    <label for="data de nascimento">data de nascimento:</label>
+    <input type="date" id="data de nascimento" class="form-control" name="data de nascimento" required>
+    </p>
+
+
+    <p>
+    <label for="CPF">CPF:</label>
+    <input type="text" id="CPF" class="form-control" name="CPF" required>    
+   </p>
+
+   <p>
+    <label for="RG">RG:</label>
+    <input type="text" id="RG" class="form-control" name="RG" required>    
+   </p>
+   
+   <h1>contatos</h1>
+   
+   <p> 
+    <label for="telefone">telefone:</label>
+    <input type="number" id="telefone" class="form-control"  name="telefone" required>
+   </p>
+   
+   <p> 
+    <label for="email">email:</label>
+    <input type="email" id="email" class="form-control"  name="email" required>
+   </p>
+   
+   <h1>endereço:</h1>
+   
+   <p> 
+    <label for="rua">rua:</label>
+    <input type="text" id="rua" class="form-control"  name="rua" required>
+   </p>
+
+   <p> 
+    <label for="numero">número:</label>
+    <input type="number" id="numero" class="form-control"  name="numero" required>
+   </p>
+
+   <p> 
+    <label for="bairro">bairro:</label>
+    <input type="text" id="bairro" class="form-control"  name="bairro" required>
+   </p>
+
+   <p> 
+    <label for="cidade">cidade:</label>
+    <input type="text" id="cidade" class="form-control"  name="cidade" required>
+   </p>
+
+   <p> 
+    <label for="estado">estado:</label>
+    <input type="text" id="estado" class="form-control"  name="estado" required>
+   </p>
+
+   <p> 
+    <label for="CEP">CEP:</label>
+    <input type="number" id="CEP" class="form-control"  name="CEP" required>
+   </p>
+   
+   
+   
+   
+   
+   
+
+   
+   
+
+   
+
+
+
+   
+
+
+    <button type="submit" class="btn btn-primary btn-sm" >Enviar</button>
+</form>
+{% endblock  %}
